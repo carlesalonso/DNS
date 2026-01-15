@@ -1,0 +1,19 @@
+$TTL 24h
+$ORIGIN waytoit.test.
+@		IN	SOA	dns1.waytoit.test. admin.waytoit.test. (
+					1       ; serial number
+					24h	; refresh
+					2h	; update retry 
+					1000h	; expire
+					2d	; minimum
+					)
+
+		IN	NS	dns1.waytoit.test.
+dns1			IN	A   192.168.1.132
+waytoit.test.	IN	A 	192.168.1.10
+pvedemo1		IN	A	192.168.1.10
+pvedemo2		IN	A	192.168.1.11
+pvedemo3		IN	A	192.168.1.12
+dockerdemo		IN	A	192.168.1.30
+pbs		    	IN	A	192.168.1.31
+ftp         	IN  CNAME   ftp.rediris.es.

@@ -1,0 +1,17 @@
+$TTL 24h
+$ORIGIN 168.192.in-addr.arpa.
+@	IN	SOA	dns1.waytoit.test. admin.waytoit.test. (
+					1       ; serial number
+					24h	; refresh
+					2h	; update retry 
+					1000h	; expire
+					2d	; minimum
+					)
+				
+IN	NS	dns1.waytoit.test.
+	
+10	IN	PTR	    pvedemo1.waytoit.test.
+11	IN	PTR     pvedemo2.waytoit.test.
+12	IN	PTR	    pvedemo3.waytoit.test.
+30	IN	PTR	    dockerdemo.waytoit.test.
+31	IN	PTR     pbs.waytoit.test.
